@@ -4,7 +4,7 @@ from kaggle_accept.acception import accept
 
 def _main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--competion-name", require=True)
+    parser.add_argument("-c", "--competion-name", required=True)
     
     args = parser.parse_args()
     accept(args.competion_name)
